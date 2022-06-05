@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+
+    tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="Sketch Dataset Parameters"
+        android:textColor="#ff6666"
+
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.082" />
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv"
+        app:layout_constraintBottom_toTopOf="@+id/l2"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:hint="Attribute 1"
+            android:layout_marginRight="20dp"
+            android:textColorHint="#d9d9d9"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintVertical_bias="0.42" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:hint="Attribute 2"
+            android:textColorHint="#d9d9d9"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintVertical_bias="0.42" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l1"
+        app:layout_constraintBottom_toTopOf="@+id/l3"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textColorHint="#d9d9d9"
+            android:textColor="@color/colorPrimary"
+            android:hint="Attribute 3"
+            app:layout_constraintVertical_bias="0.42"
+            android:layout_marginRight="20dp"/>
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textColorHint="#d9d9d9"
+            android:textColor="@color/colorPrimary"
+            android:hint="Attribute 4"
+            app:layout_constraintVertical_bias="0.42" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/l3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:textColorHint="#ffff99"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l2"
+        app:layout_constraintBottom_toTopOf="@+id/l4"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textColorHint="#d9d9d9"
+            android:textColor="@color/colorPrimary"
+            android:hint="Attribute 5"
+            app:layout_constraintVertical_bias="0.42"
+            android:layout_marginRight="20dp"/>
+
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:hint="Attribute 6"
+            android:textColorHint="#d9d9d9"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintVertical_bias="0.42" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l4"
+        android:layout_width="match_parent"
+        android:textColor="#54af49"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l3"
+        app:layout_constraintBottom_toTopOf="@+id/l5"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/editText7"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:hint="Attribute 7"
+            android:gravity="center"
+            android:textColorHint="#d9d9d9"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintVertical_bias="0.42" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/l5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/op"
+        app:layout_constraintTop_toBottomOf="@+id/l4"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Predict"
+            android:background="@drawable/button_shape"
+            android:layout_marginRight="40dp"
+             />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:text="Train"
+             />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/op"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:fontFamily="cursive"
+        android:textColorHint="@color/colorPrimary"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l5"
+        android:hint="Output"
+        android:background="@drawable/shape"
+        android:gravity="center"
+        app:layout_constraintVertical_bias="0.082" />
+
+    <!--<EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:hint="Input Attribute 3"
+        app:layout_constraintBottom_toTopOf="@+id/editText4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        app:layout_constraintVertical_bias="0.42" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:hint="Input Attribute 4"
+        app:layout_constraintBottom_toTopOf="@+id/editText5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText3"
+        app:layout_constraintVertical_bias="0.42" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:hint="Input Attribute 5"
+        app:layout_constraintBottom_toTopOf="@+id/editText6"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText4"
+        app:layout_constraintVertical_bias="0.42" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Input Attribute 6"
+        app:layout_constraintBottom_toTopOf="@+id/editText7"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText5"
+        app:layout_constraintVertical_bias="0.42" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:hint="Input Attribute 7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText6"
+        app:layout_constraintVertical_bias="0.42" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="login"
+        android:text="Predict"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText7" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="login"
+        android:text="Train"
+        app:layout_constraintLeft_toRightOf="@+id/button1"
+        app:layout_constraintTop_toBottomOf="@+id/editText7" />-->
+</android.support.constraint.ConstraintLayout>
